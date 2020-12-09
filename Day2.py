@@ -13,9 +13,6 @@ def validator( password_policy ):
     else:
         return False
 
-
-
-
 passwords = []
 for password in file:
     pass_setting = password.split(" ")
@@ -31,6 +28,5 @@ i = 0
 for password in passwords:
     if validator(password):
         i += 1
-
 
 print(i)
